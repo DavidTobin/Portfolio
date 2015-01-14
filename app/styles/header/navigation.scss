@@ -7,8 +7,11 @@ nav {
 
     li {
       display: inline-block;
-      width: 25%;
-      margin-right: -4px;
+
+      @media (max-width: 767px) {
+        width: 25%;
+        margin-right: -4px;
+      }
 
       a {
         display: block;
