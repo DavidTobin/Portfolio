@@ -1,0 +1,83 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Abel|Ubuntu|Droid+Serif|Open+Sans|Jura|Nothing+You+Could+Do);
+
+@import "compass";
+
+@import "variables";
+
+@import "brand";
+@import "header/header";
+@import "contact/details";
+@import "skills/skills";
+@import "projects/projects";
+@import "experience/experience";
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 50px 0 0 0;
+}
+
+a {
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.blue {
+  background: $blue;
+  color: $white;
+}
+
+.green {
+  background: $green;
+  color: $white;
+}
+
+.red {
+  background: $red;
+  color: $white;
+}
+
+.purple {
+  background: $purple;
+  color: $white;
+}
+
+.orange {
+  background: $orange;
+  color: $white;
+}
+
+@media not print {
+  .print {
+    display: none !important;
+  }
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+
+  .hide-print {
+    display: none !important;
+  }
+}

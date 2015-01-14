@@ -1,0 +1,34 @@
+@import "navigation";
+@import "../variables";
+
+header {
+  .navbar-inner {
+    background-color: rgb(242,242,242);
+    background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(255,255,255,1) 100%);
+
+    &.blue {
+      border-top: 6px solid $blue;
+    }
+
+    &.green {
+      border-top: 6px solid $green;
+    }
+
+    &.red {
+      border-top: 6px solid $red;
+    }
+
+    &.purple {
+      border-top: 6px solid $purple;
+    }
+
+    &.orange {
+      border-top: 6px solid $orange;
+    }
+  }
+
+  .icons {
+    position: relative;
+    top: 20px;
+  }
+}

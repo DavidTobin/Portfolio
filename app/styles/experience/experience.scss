@@ -1,0 +1,29 @@
+section.experience {
+  margin-bottom: 20px;
+
+  h2 {
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 9px 0;
+
+    small {
+      font-size: 14px;
+    }
+  }
+
+  ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+    li {
+      margin-bottom: 9px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+section.contact-details {
+  margin-bottom: 80px;
+  margin-top: 24px;
+
+  .round {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35),
+                0px -2px 2px rgba(0, 0, 0, 0.35),
+                2px 0px 2px rgba(0, 0, 0, 0.35),
+                -2px 0px 2px rgba(0, 0, 0, 0.35);
+  }
+
+  .picture {
+    text-align: center;
+  }
+
+  img {
+    height: 185px;
+    width: 185px;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  @media print {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  dl {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+
+    dt, dd {
+      font-family: "Jura", sans-serif;
+
+      width: 50%;
+      display: inline-block;
+      margin-right: -4px;
+      font-weight: 300;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    dt {
+      color: #666;
+      text-transform: uppercase;
+    }
+
+    dd {
+      font-weight: normal;
+      text-align: right;
+    }
+  }
+}
