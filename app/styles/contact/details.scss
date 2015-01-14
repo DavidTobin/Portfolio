@@ -33,7 +33,7 @@ section.contact-details {
   }
 
   dl {
-    width: 75%;
+    width: 100%;
     display: block;
     margin: 0 auto;
 
@@ -51,11 +51,13 @@ section.contact-details {
     dt {
       color: #666;
       text-transform: uppercase;
+      width: 25%;
     }
 
     dd {
       font-weight: normal;
       text-align: right;
+      width: 75%;
     }
   }
 }
