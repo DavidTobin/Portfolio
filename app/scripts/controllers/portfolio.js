@@ -9,5 +9,25 @@
  */
 angular.module('portfolioApp')
   .controller('PortfolioCtrl', function ($scope) {
-    $scope.currentDate = new Date();
+    var Controller = {
+      defaults: {
+        showPrintDialog: document.querySelector('html').classList.contains('chrome')
+      },
+
+      init: function () {},
+
+      API: {
+        openPrintDialog: function () {
+          window.print();
+        }
+      }
+    };
+
+    _.each(Controller.API, function (func, name) {
+      $scope[name] = func;
+    });
+
+    _.each(Controller.defaults, function (variable, name) {
+      $scope[name] = variable;
+    });
   });
