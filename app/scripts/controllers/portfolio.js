@@ -14,7 +14,15 @@ angular.module('portfolioApp')
         showPrintDialog: document.querySelector('html').classList.contains('chrome')
       },
 
-      init: function () {},
+      init: function () {
+        _.each(this.API, function (func, name) {
+          $scope[name] = func;
+        });
+
+        _.each(this.defaults, function (variable, name) {
+          $scope[name] = variable;
+        });
+      },
 
       API: {
         openPrintDialog: function () {
@@ -23,11 +31,5 @@ angular.module('portfolioApp')
       }
     };
 
-    _.each(Controller.API, function (func, name) {
-      $scope[name] = func;
-    });
-
-    _.each(Controller.defaults, function (variable, name) {
-      $scope[name] = variable;
-    });
+    Controller.init();
   });

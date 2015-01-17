@@ -1,5 +1,7 @@
 'use strict';
 
+require('newrelic');
+
 var connect       = require('connect'),
     http          = require('http'),
     compression   = require('compression'),
